@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@ body {
     background-color: #000;
     color: #fff;
     line-height: 1.6;
+    
 }
 
 header {
@@ -343,7 +344,10 @@ header nav ul li a {
 background: rgb(230, 83, 60);
 }
 
-
+.team-h{
+    text-align: center;
+    border-top: 10px;
+}
 
 
 .team-container {
@@ -366,7 +370,6 @@ background: rgb(230, 83, 60);
     border-radius: 5px;
 }
 
-/* Overlay for text on image */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -406,8 +409,8 @@ background: rgb(230, 83, 60);
 
 
 .real-footer {
-    background: rgb(23, 23, 29);
-    background: linear-gradient(90deg, rgba(23, 23, 29, 1) 35%, #596061 100%);
+    background: #444444;
+    background: linear-gradient(90deg, #5e5e5f 35%, #596061 100%);
     padding: 20px;
     color: #ffffff;
 }
@@ -418,6 +421,9 @@ background: rgb(230, 83, 60);
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: #444444;
+    
+    
 }
 
 .footer1, .footer2, .footer3 {
@@ -533,3 +539,70 @@ background: rgb(230, 83, 60);
         max-width: 100%;
     }
 }
+
+.team-section{
+    background-color: #000;
+}
+
+
+
+.success-story {
+    padding: 20px;
+    background-color: hsl(0, 1%, 16%);
+    
+    
+}
+
+.story-content {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.story-image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-text {
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.story-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: hsl(0, 100%, 99%);
+}
+
+.story-text p {
+    font-size: 16px;
+    color: rgb(119, 118, 118);
+    line-height: 1.5;
+}
+
+
+@media (max-width: 576px) {
+    .story-content {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .story-text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .story-text h2 {
+        font-size: 20px;
+    }
+
+    .story-text p {
+        font-size: 14px;
+    }
+}
+
